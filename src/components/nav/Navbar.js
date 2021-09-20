@@ -7,7 +7,7 @@ export default function Navbar() {
   const [navlink, setNavlink] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:1337/categories')
+    axios.get('https://roskilde-recipe-api.herokuapp.com/categories')
     .then((response)=>{ 
       console.log("Navbar response",response.data)
       setNavlink(response.data)

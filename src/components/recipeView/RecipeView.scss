@@ -12,6 +12,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 6rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
   }
   &__title{
     margin-bottom: 0;

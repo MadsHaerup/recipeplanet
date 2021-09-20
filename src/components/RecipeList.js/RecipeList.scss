@@ -3,4 +3,8 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
   grid-gap:4rem;
 
+  &__link{
+    text-decoration: none;
+    color:initial;
+  }
 }

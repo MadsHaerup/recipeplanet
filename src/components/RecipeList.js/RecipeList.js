@@ -1,3 +1,4 @@
+import { Link } from '@reach/router';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import RecipeItem from '../recipeItem/RecipeItem';
@@ -19,12 +20,13 @@ export default function RecipeList() {
     <h2>More recipes</h2>
     <div className="recipeList">
       {items.map((item) => (
+        <Link to={`/recipes/${item.id}`} key = {item.id} className="recipeList__link">
         <RecipeItem
-        key = {item.id}
         title = {item.title}
         cookTime = {item.cook_time}
         // image = {item.images[0]?.formats.thumbnail.url}
         />
+        </Link>
       ))}
     </div>
     </>
