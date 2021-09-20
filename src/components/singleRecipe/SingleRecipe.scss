@@ -1,0 +1,57 @@
+.singleRecipe{
+  border: 15px solid #fff;
+  border-radius: 19px;
+  padding: 2rem 2rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  .goback{
+    width:100px;
+  }
+  &__buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+  }
+  &__title{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color:#969696;
+    font-style: italic;
+  }
+
+  &__btn{
+    background-color: #408EBA;
+    color:#fff;
+    border:none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    display: block;
+  }
+
+  &__nutritional{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap:2rem;
+  }
+  &__ingredients{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    &__ingredient{
+      display: grid;
+      margin-bottom: 2rem;
+
+      &__name{
+        font-weight: bold;
+      }
+      &__amount{
+        line-height: 0;
+        color:#969696;
+      }
+    }
+  }
+}

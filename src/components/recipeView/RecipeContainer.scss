@@ -1,0 +1,6 @@
+.recipeContainer{
+  display: grid;
+  overflow-x: scroll;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+}

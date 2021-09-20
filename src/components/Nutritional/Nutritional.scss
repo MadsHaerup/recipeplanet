@@ -1,0 +1,13 @@
+.nutritional{
+  background-color: #F0F7FF;
+  border-radius: 7px;
+  border:5px solid #fff;
+  text-align: center;
+
+  &__nutrients, &__quantity{
+    font-weight: bold;
+  }
+  &__value{
+    font-weight:200 ;
+  }
+}
