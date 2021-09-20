@@ -1,36 +1,24 @@
-# Recipe Planet Applikation (del 2)
+# Recipe Planet Application
+
+
+[View App](https://recipe-planet.herokuapp.com/)
 
 ![""](./recipeplanet.png)
 
-I denne anden del af Recipe Planet skal du lave selve applikationen.
+The Application consumes data from a strapi API which was deployed on heroku.
 
-Applikationen er en præsentation af opskrifter som kommer fra APIet (se del 1).
+The Application was build mainly for tablet and desktop.
 
-Applikationen er tiltænkt tablets.
+## Description
+Recipe Planet application is an app for viewing recipes, the user can choose among different categories.
 
-[Designet finder du her](./RecipePlanet.fig).
-
-## Beskrivelse
-Recipe Planet applikationen er en opskriftpræsentation, som lader brugere vælge mellem forskellige kategorier af opskrifter.
-
-Dette kan fx være
+For example between
 * Chicken
 * Fruits
 * Chinese
 * Mexican
+ etc..
 
-Brugere kan også vælge mellem forskellige typer, fx
-* Dinner
-* Lunch
-* Breakfast
-* Snacks
+Clicking on show ingredients, will show a modal with all the ingredients. 
 
-Disse typer og kategorier er tænkt som sorterings eller filtreringsmuligheder for brugeren.
-
-Dette betyder, at hvis en bruger vælger Mexican øverst og Dinner i venstre side så får brugeren vist alle oskrifter som matcher de kriterier.
-
-Opskrifterne præsenteres som en slider, hvor brugeren kan "swipe" mellem opskrifterne. Hvis en bruger klikker på "View all ingredients" på en opskrift, vises en liste over ingredienser i et modal vindue. Du skal selv bestemme hvordan dette modal vindue skal se ud, men det skal følge det øvrige design.
-
-Det samme gør sig gældende for knappen "Recipe".
-
-"Add to favourites"-knappen skal du ignorere.
+Clicking on show recipe, will take you to the single view of that recipe.
